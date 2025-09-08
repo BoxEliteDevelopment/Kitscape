@@ -1,0 +1,179 @@
+kits:
+  starter:
+    displayName: "&aStarter Kit"
+    items:
+      # Legacy format (still supported for backward compatibility)
+      - "WOODEN_SWORD:1"
+      - "APPLE:5"
+      
+      # Enhanced format with metadata
+      - material: STONE_SWORD
+        amount: 1
+        name: "&6&lStarter Sword"
+        lore:
+          - "&7A basic sword for beginners"
+          - "&7Durability: &a100%"
+        enchantments:
+          DURABILITY: 1
+          DAMAGE_ALL: 1
+        durability: 0
+        
+      - material: SPLASH_POTION
+        amount: 3
+        name: "&b&lHealing Potion"
+        lore:
+          - "&7Restores health instantly"
+        potionType: INSTANT_HEAL
+        effects:
+          - type: HEAL
+            duration: 1
+            amplifier: 0
+            ambient: false
+            particles: true
+            
+      - material: ENCHANTED_BOOK
+        amount: 1
+        name: "&d&lEnchanted Book"
+        lore:
+          - "&7Contains powerful enchantments"
+        storedEnchantments:
+          SHARPNESS: 3
+          UNBREAKING: 2
+          
+      - material: LEATHER_CHESTPLATE
+        amount: 1
+        name: "&a&lCustom Armor"
+        lore:
+          - "&7Custom colored leather armor"
+        color: "#FF6B6B"
+        enchantments:
+          PROTECTION_ENVIRONMENTAL: 2
+          
+      - material: WRITTEN_BOOK
+        amount: 1
+        name: "&e&lGuide Book"
+        title: "&6KitScape Guide"
+        author: "Server Admin"
+        pages:
+          - "&lWelcome to KitScape!&r\n\nThis is your starter guide."
+          - "&lHow to use kits:&r\n\n1. Open the kit menu\n2. Select a kit\n3. Enjoy your items!"
+          
+      - material: FIREWORK_ROCKET
+        amount: 5
+        name: "&c&lCelebration Firework"
+        lore:
+          - "&7Celebrate with style!"
+        power: 2
+        effects:
+          - type: BALL_LARGE
+            colors:
+              - "#FF0000"
+              - "#00FF00"
+              - "#0000FF"
+            fadeColors:
+              - "#FFFF00"
+            flicker: true
+            trail: true
+            
+      - material: PLAYER_HEAD
+        amount: 1
+        name: "&b&lCustom Head"
+        lore:
+          - "&7A custom player head"
+        owner: "Notch"
+        
+      - material: CROSSBOW
+        amount: 1
+        name: "&8&lLoaded Crossbow"
+        lore:
+          - "&7Comes pre-loaded with arrows"
+        enchantments:
+          QUICK_CHARGE: 2
+        chargedProjectiles:
+          - material: ARROW
+            amount: 1
+            name: "&7Special Arrow"
+            lore:
+              - "&7A special arrow for the crossbow"
+              
+      - material: WHITE_BANNER
+        amount: 1
+        name: "&f&lCustom Banner"
+        lore:
+          - "&7A custom designed banner"
+        patterns:
+          - type: STRIPE_TOP
+            color: RED
+          - type: CIRCLE_MIDDLE
+            color: BLUE
+          - type: BORDER
+            color: BLACK
+            
+    cooldown:
+      seconds: 60
+      minutes: 5
+    slot: 13
+    hexColor: "#FFAA00"
+    icon:
+      material: CHEST
+      amount: 1
+      name: "&aStarter Kit"
+      lore:
+        - "&7– Enhanced with metadata support –"
+
+  vip:
+    displayName: "&6VIP Kit"
+    items:
+      # Legacy format example
+      - "DIAMOND_SWORD:1"
+      - "GOLDEN_APPLE:3"
+      
+      # Enhanced format examples
+      - material: DIAMOND_CHESTPLATE
+        amount: 1
+        name: "&b&lVIP Armor"
+        lore:
+          - "&6Exclusive VIP armor"
+          - "&7Enhanced protection"
+        enchantments:
+          PROTECTION_ENVIRONMENTAL: 4
+          DURABILITY: 3
+          THORNS: 2
+        durability: 0
+        
+      - material: LINGERING_POTION
+        amount: 2
+        name: "&d&lVIP Potion"
+        lore:
+          - "&6Exclusive VIP potion"
+        potionType: INSTANT_HEAL
+        effects:
+          - type: HEAL
+            duration: 1
+            amplifier: 1
+            ambient: false
+            particles: true
+          - type: FIRE_RESISTANCE
+            duration: 6000
+            amplifier: 0
+            ambient: true
+            particles: false
+            
+      - material: ENCHANTED_GOLDEN_APPLE
+        amount: 1
+        name: "&6&lVIP Golden Apple"
+        lore:
+          - "&6The most powerful food item"
+          - "&7Grants temporary effects"
+          
+    cooldown:
+      hours: 1
+    slot: 14
+    hexColor: "#FFD700"
+    icon:
+      material: DIAMOND
+      amount: 1
+      name: "&bVIP KIT"
+      lore:
+        - "&7– Enhanced with metadata support –"
+        - "&6Exclusive VIP benefits"

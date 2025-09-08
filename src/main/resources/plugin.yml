@@ -1,0 +1,10 @@
+name: KitScape
+version: '${project.version}'
+main: tiie.kitscape.KitScape
+api-version: '1.21'
+author: Adminesty Creations
+commands:
+  kitscape:
+    description: Kitscape management command
+    usage: /<command> [subcommand]
+    aliases: [ kits ]

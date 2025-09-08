@@ -1,0 +1,27 @@
+messages:
+  claim: "&aYou claimed &f%kit%&a!"
+  preview: "&ePreviewing &f%kit%&e..."
+  cooldown: "&cPlease wait &f%time%&c before claiming %kit% again."
+  actionbar_claim: "&aYou claimed &f%kit%&a!"
+  title_claim:
+      title: "&6Kit Claimed!"
+      subtitle: "&f%kit% Claimed"
+
+lore:
+  claimHint: "&7Left-click to claim"
+  previewHint: "&7Right-click to preview"
+
+gui:
+  title: "&4Kitscape"
+  cooldownLine: "&cCooldown: &f%time%"
+  locked:
+    show: true
+    item:
+      material: "GRAY_STAINED_GLASS_PANE"
+      name: "&c&lLocked"
+      lore:
+        - "&7You need: &f%perm%"
+
+branding:
+  logo_text: "K I T S C A P E"
+  logo_hex: "#FFD700"   # bright yellow/gold
